@@ -1,0 +1,255 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    position: relative;
+}
+
+img , input[type=image]{                                         /* REMEMBER TO CHANGE LATER */
+    height: 20px;                   
+    width: 20px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 3.7fr;
+    grid-template-rows: 0.5fr 4.5fr;
+    position: relative;
+}
+
+.header {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    border: 1px solid black;                                    /* REMEMBER TO CHANGE LATER */
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: sticky;
+    top: -80px;
+    background-color: white;
+}
+
+.hrow1 {
+    display: grid;
+    grid-template-columns: 3fr 1.3fr;
+}
+
+.search,.bell {
+    height: 30px;
+    width: 30px;
+}
+
+input[type=search]{
+    border-radius: 18px;
+    border: none;
+    background-color: #e5e7eb;
+    height: 30px;
+    width: 500px;
+}
+
+.pfp1, .pfp2, .pfp3, .pfp4, .pfp5 {
+    height: 45px;
+    width: 45px;
+}
+
+.searchBox {
+    display: grid;
+    grid-template-columns: 1fr 15fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.notify {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr 2.5fr;
+    align-items: center;
+    justify-items: center;
+    font-weight: 900;
+    padding-right: 20px;
+}
+
+.hrow2 {
+    display: grid;
+    grid-template-columns: 3fr 1.3fr;
+}
+
+.dp {
+    height: 75px;
+    width: 75px;
+}
+
+.name {
+    display: grid ;
+    grid-template-columns: 0.6fr 3fr;
+    align-items: center;
+    font-weight: 900;
+    padding-bottom: 10px;
+}
+
+button {
+    padding: 10px 30px;
+    border-radius: 20px;
+    background-color: #2563eb;
+    border: none;
+    color: white;
+    font-weight: 900;
+}
+
+.edit {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    gap: 25px;
+    padding-right: 20px;
+}
+
+.vain{
+    grid-row: 1 / 3;
+    grid-column: 1 / 2;
+}
+
+.sidebar {
+    border: 1px solid black;                                    /* REMEMBER TO CHANGE LATER */
+    display: grid;
+    grid-template-rows: 1.7fr 2.7fr 1.7fr;
+    padding-left: 20px;
+   /* background-color: #86ca7d;*/background-color: white;
+
+    position: fixed;
+    width: 287px;
+}
+
+#dashboard {
+    height: 65px;
+    width: 65px;
+}
+
+.logo {
+    font-size: 1.6rem;
+    font-weight: 900;
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;
+    align-items: center;
+}
+
+#home,#profile,#message,#history,#tasks,#communities,#setting,#support,#privacy {
+    height: 35px;
+    width: 35px;
+}
+
+.dashboard {
+    display: grid;
+    font-size: 1.1rem;
+}
+
+.home,.profile,.message,.history,.tasks,.communities{
+    display: grid;
+    grid-template-columns: 0.5fr 2fr
+}
+
+.info {
+    margin-top: 45px;
+    font-size: 1.1rem;
+    padding-bottom: 20px;
+}
+
+.setting,.support,.privacy{
+    display: grid;
+    grid-template-columns: 0.5fr 2fr;
+}
+
+label {
+    cursor: pointer;
+}
+
+.main-content {
+    border: 1px solid black;                                    /* REMEMBER TO CHANGE LATER */
+    padding-left: 20px;
+    display: grid;
+    grid-template-columns:  3fr 1fr;
+    grid-template-rows: 0.1fr 10fr;
+    background-color: antiquewhite;
+    padding-bottom: 40px;
+}
+
+h2 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+.projects {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+    gap: 30px;
+    padding-right: 20px;
+}
+
+.at {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+    padding-right: 20px;
+}
+
+.card {
+    border: 1px solid black;
+    border-left-style: solid;
+    border-left-width: 10px;
+    border-left-color: #2563eb;
+    background-color: white;
+    padding: 30px 20px;
+    display: grid;
+    grid-template-rows: 1fr 4fr 1fr;
+}
+
+.card .title {
+    font-weight: 900;
+    font-size: 1.2rem;
+}
+
+.three  {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.announcement {
+    background-color: white;
+    border: 1px solid black;
+    padding: 30px 15px;
+}
+
+.ann {
+    border-bottom: 1px solid black;
+    padding-top: 20px;
+}
+
+.last {
+    border: none;
+}
+
+.ann .title {
+    font-weight: 800;
+}
+
+.trending {
+    background-color: white;
+    border: 1px solid black;
+    display: grid;
+    grid-template-rows: repeat(4,1fr);
+    gap: 20px;
+    padding: 20px 10px;
+}
+
+.user {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
